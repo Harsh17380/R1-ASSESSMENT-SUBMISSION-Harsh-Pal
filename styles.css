@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0056b3;
+}
+.container {
+    width: 30%;
+    margin: 150px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+.container h1{
+    padding: 20px;
+    text-align: center;
+}
+.bar{
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.chc{
+    margin-left: 20px;
+}
+.form-group {
+    padding: 10px;
+    font-size: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 5px;
+}
+.form-check {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+
+}
+.form-check input {
+    margin-right: 10px;
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+    width: 93%;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.container p{
+    text-align: center;
+}
+.container a{
+    text-decoration: none;
+    color: #007bff;
+}
+.page{
+    margin-left: -7px;
+    width: 101%;
+    #height: 100%;
+    background: white;
+}
+.page-cont{
+    display: flex;
+    width: 100%;
+    background: ghostwhite;
+}
+.left-border{
+    width: 50px;
+    #height: 100%;
+    background: steelblue;
+}
+.logo img{
+    width: 100%;
+}
+.page-btn{
+    width: 100%;
+    height: 50px;
+    background: steelblue;
+    border: none;
+    cursor: pointer;
+    #transition: transform 0.5s;
+}
+.page-btn:hover{
+    background: ghostwhite;
+}
+.page-convo{
+    background: ghostwhite;
+}
+.user{
+    margin-top: 450px;
+}
+.page-convo header{
+    display: flex;
+    align-content: center;
+    border: 2px solid lightgray;
+    height: 45px;
+    font-size: 8px;
+}
+.btn2 ,.rbtn{
+    width: 100%;
+    height: 20px;
+    margin: 10px;
+    border: none;
+    background: ghostwhite;
+    cursor: pointer;
+}
+.rbtn{
+    margin-left: 100px;
+}
+.c-convo{
+    display: block;
+    height: 93%;
+    border: 2px solid lightgray;
+}
+.chats{
+    display: flex;
+
+}
+.chats input{
+    margin: 10px;
+
+}
+.tick{
+    display: flex;
+    flex-basis: 80%;
+}
+.chats time{
+    flex-basis: 20%;
+    height: auto;
+    margin-top: 8px;
+}
+.chat{
+    border: 2px solid lightgray;
+    width: 100%;
+    background: ghostwhite;
+}
+.chat:hover{
+    background: #d8d8d8;
+}
+.chatinfo h3{
+    margin-bottom: 0px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.chatinfo h4{
+    font-size: 12px;
+    margin-top: 0;
+}
+.prod{
+    margin: 0 10px;
+}
+.prod p{
+    font-size: 10px;
+    margin-left: -70px;
+    padding: 0;
+    margin-top: -15px;
+}
+.prod h5{
+    margin-left: -150px;
+    margin-top: -8px;
+}
+.inbox{
+    width: 50%;
+}
+.inbox header{
+    border: 1px solid lightgray;
+}
+.inbox h2{
+    padding-left: 20px;
+}
+.chat-area{
+    background: #eaeaea;
+    height: 80%;
+    width: 100%;
+}
+.mess1 i{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.m1top{
+    display: flex;
+}
+.mess1-chat{
+    margin: 25px;
+    border: 1px solid lightgray;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.fa-user::before{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    background: white;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.mess1 p{
+    font-size: 12px;
+    margin-top: -20px;
+    margin-left: 100px;
+}
+.mess2{
+    margin-left: 400px;
+    margin-bottom: -38px;
+}
+.mess3 i{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.m2top{
+    display: flex;
+}
+.mess2-chat{
+    margin: 25px;
+    border: 1px solid lightgray;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.mess2 p,.mess3 p{
+    font-size: 12px;
+    margin-top: -20px;
+    margin-left: 100px;
+}
+.mess3{
+    margin-left: 253px;
+    margin-bottom: -38px;
+}
+.keyb{
+    width: 100%;
+    margin-top: 55px;
+}
+.keyb label{
+    display: block;
+    border-radius: 10px;
+    height: 46px;
+    margin-top: 38px;
+    margin-left: 11px;
+    width: 97%;
+    border: 1px solid black;
+}
+.t1{
+    border: none;
+    margin: 3px;
+    height: 75%;
+    width: 98%;
+    background: ghostwhite;
+}
+ti:before{
+    border: none;
+}
+.profile{
+    width: 25%;
+    background: #d4e2e6;
+}
+.profile header{
+    display: block;
+    border: 1px solid lightgray ;
+    background: ghostwhite;
+}
+.profile header i{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+}
+.profile header h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.offline{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    margin-top: -20px;
+}
+.dot{
+    display: flex;
+    align-items: center;
+}
+.prof{
+    display: flex;
+    justify-content: center;
+}
+.call ,.pro{
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    background: ghostwhite;
+}
+.call:before ,.pro:after{
+    background: red;
+}
+.call i,.pro i{
+    margin-inline: 10px;
+}
+.fa-phone{
+    margin-top: -8px;
+}
+.fa-phone:before {
+    font-size: 21px;
+    content: "\f095";
+}
+.us:before{
+    font-size: 18px;
+}
+.details{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background: ghostwhite;
+}
+.main{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.left ul{
+    list-style: none;
+    margin-left: -50px;
+    color: #737373;
+}
+.right ul{
+    list-style: none;
+    text-align: end;
+}
+ul li {
+    margin-bottom: 15px;
+}
+.details a{
+    text-decoration: none;
+    color: dodgerblue;
+}

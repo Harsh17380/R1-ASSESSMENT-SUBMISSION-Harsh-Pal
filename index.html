@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R1 ASSESSMENT SUBMISSION-Harsh</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7da596c552.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="screen">
+<div class="container" id="signupContainer" style="display:none;">
+    <h1 id="heading">Create Account</h1>
+    <form id="login-forms">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="bar" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="bar" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="bar" id="password" name="password" required>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="chc" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <button type="submit" class="btn" id="sign-up" onclick="signup1()">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href=" #" onclick="showLogin()">Login</a></p>
+</div>
+<!-- Sign up form -->
+<div class="container" id="loginContainer">
+    <h1>Sign-Up</h1>
+    <form>
+       <!-- <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="bar" id="sname" name="name" required>
+        </div>-->
+        <div class="form-group">
+            <label for="smail">Email</label>
+            <input type="email" class="bar" id="smail" name="smail" required autofocus >
+        </div>
+        <div class="form-group">
+            <label for="word">Password</label>
+            <input type="password" class="bar" id="word" name="word" required autofocus >
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="chc" id="remember" name="remember">
+            <label for="remember">Remember Me</label>
+        </div>
+        <button type="submit" id="login" onclick="login1()"  class="btn">Log in</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+</div>
+</div>
+<div class="page" id="chat-page" style="display:none;">
+    <div class="page-cont">
+        <div class="left-border">
+            <div class="logo"><img src="logo.jpeg" alt=""></div>
+            <div class="convo">
+                <button type="submit" class="page-btn"><i class="fa-solid fa-inbox"></i></button>
+            </div>
+            <div class="group">
+                <button type="submit" class="page-btn"><i class="fa-solid fa-user-group"></i></button>
+            </div>
+            <div class="stats">
+                <button type="submit" class="page-btn"><i class="fa-solid fa-chart-line"></i></button>
+            </div>
+            <div class="user">
+                <button type="submit" class="ubtn"><i class="fa-solid fa-user"></i></button>
+            </div>
+        </div>
+        <div class="page-convo">
+            <header>
+                <button type="submit" class="btn2"><i class="fa-solid fa-bars"></i></button>
+                <h1>Conversation</h1>
+                <button type="submit" class="rbtn"><i class="fa-solid fa-rotate-right"></i></button>
+            </header>
+            <div class="c-convo">
+                <button type="submit" class="chat">
+                    <div class="chats">
+                        <div class="tick" >
+                            <label for="read-me1"></label><input type="checkbox" name="read" id="read-me1">
+                            <div class="chatinfo">
+                                <h3>Amit RG</h3>
+                                <h4>Facebook DM</h4>
+                            </div>
+                        </div>
+                        <time>10m</time>
+                    </div>
+                    <div class="prod">
+                        <h5>Amazon Product</h5>
+                        <p>Hey There! I probably did one of the ....</p>
+                    </div>
+                </button>
+                <button type="submit" class="chat">
+                    <div class="chats">
+                        <div class="tick" >
+                            <label for="read-me2"></label><input type="checkbox" name="read" id="read-me2">
+                            <div class="chatinfo">
+                                <h3>Hiten Saxena</h3>
+                                <h4>Facebook Post</h4>
+                            </div>
+                        </div>
+                        <time>10m</time>
+                    </div>
+                    <div class="prod">
+                        <h5>Available in store ?</h5>
+                        <p>Hi do you have any T-shirt available in....</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="inbox">
+            <header><h2>Amit RG</h2></header>
+            <div class="chat-area">
+                <div class="mess1">
+                    <div class="m1top">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="mess1-chat">
+                            Is it in stock right now?
+                        </div>
+                    </div>
+                    <p>Amit RG - Mar 05,2:22 AM</p>
+                </div>
+                <div class="mess2">
+                    <div class="m2top">
+                        <div class="mess2-chat">
+                            We have 3 left in stock!
+                        </div>
+                    </div>
+                </div>
+                <div class="mess3">
+                    <div class="m2top">
+                        <div class="mess2-chat">
+                            If you order before 8pm we can ship it today.
+                        </div>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <p>Amit RG - Mar 05,2:22 AM</p>
+                </div>
+            </div>
+            <div class="keyb" >
+                <label>
+                    <textarea class="t1" placeholder="Message Amit RG"> </textarea>
+                </label>
+            </div>
+        </div>
+        <div class="profile">
+            <header class="p1">
+                <i class="fa-solid fa-user" style="margin-top: 30px"></i>
+                <h3>Amit RG</h3>
+                <div class="offline">
+                    <div class="dot">&#x2022;</div>
+                    <p>offline</p>
+                </div>
+                <div class="prof">
+                    <button class="call"><i class="fa-solid fa-phone"></i>Call</button>
+                    <button class="pro"><i class="fa-solid fa-user us" style="margin-top: -14px"></i> Profile </button>
+                </div>
+            </header>
+            <div class="details">
+                <h2>Customer Details</h2>
+                <div class="main">
+                    <div class="left">
+                        <ul>
+                            <li>Email</li>
+                            <li>First Name</li>
+                            <li>Last Name</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><strong>amit@richpanel.com</strong></li>
+                            <li><strong>Amit</strong></li>
+                            <li><strong>RG</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#">view more details</a>
+            </div>
+        </div>
+    </div>
+</div><div class="page">
+</div>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBe9bpWFWyVslU1vjet6yb8z0__1BaYtbg",
+        authDomain: "fbhd-e79fb.firebaseapp.com",
+        projectId: "fbhd-e79fb",
+        storageBucket: "fbhd-e79fb.appspot.com",
+        messagingSenderId: "516085268062",
+        appId: "1:516085268062:web:b47aad4f08e985063d3ecf"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    function signup1() {
+        set(ref(db, 'user/' + document.getElementById("name").value), {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            pass: document.getElementById("password").value
+        })
+        alert("Signup done");
+    }
+
+</script>
+<script src="hello.js"></script>
+</body>
+</html>
